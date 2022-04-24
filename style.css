@@ -1,0 +1,68 @@
+/*Syntax CSS
+Selector {property: value; property: value}
+*/
+/* (*) symbols specify the universal selector meaning, we can select all HTML elemets */
+*{
+	font-family:"Roboto", sans-serif;
+}
+/*this will priorities than the universal selector*/
+h1,h3{
+	font-family: 'Montserrat', sans-serif;
+
+}
+img{
+	height:250px ;
+	width:250px ;
+}
+#landing{
+	/*vh-viewport heigth- a determinded or measured percentage of the
+	  height of the device you are viewing your wepage in.*/
+	height: 80vh;
+	/*flexbox- display:flex- will allow us to arrange or layoout the
+	  elements inside our landing section vertically and
+	  horizontally*/ 
+	  /*by default, display: flex, arranges elements
+	  inside the parent element in a row*/
+	  display: flex;
+	  /*flex-direction changes the direction of the elements inside an element
+	    with display: flex*/
+	  flex-direction: column;
+	  /*it arranges elements vertically if the flex itemrs are in a
+	    row. However, it arranges elements horizontally if the flex
+	    items are in a column*/
+	    /* align-items: center-arranges all flex
+	    items in to becentered horizantlly*/
+	  align-items: center;
+	  /*justify-content: =arranges element horizontally IF the flex
+	    items are in arow. Howvever it arranges elements horizontally
+	    if the flex items are in a column*/
+	    /*justify-content: center; arranges all flex items
+	    in the flex parent to be centered vertically IF the flex items are in column.*/
+	  justify-content: center;
+}		
+#gallery{
+	height: 75vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+ul{
+	/*remove the bullet in the inde.html ul tag*/
+	list-style: none;
+	padding: 0;
+}
+.tools{
+	/*line around the element*/
+	border: 5px solid #f2f2f2;
+	/*margin is the space ouside of  the element*/
+	margin: 20px;
+	/*padding is the space inside of the element*/
+	padding: 25px;
+	height: 200px;
+	/*% as a measurement for width is base on the total width of the parent element which is the class="tools.*/
+	width: 75%;
+}
+html{
+	scroll-behavior: smooth;
+}
