@@ -64,5 +64,6 @@ ul{
 	width: 75%;
 }
 html{
+	/*smooth transition in the button tag*/
 	scroll-behavior: smooth;
 }
